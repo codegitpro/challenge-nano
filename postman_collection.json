@@ -1,0 +1,1477 @@
+{
+	"info": {
+		"_postman_id": "772f52b8-c3ee-4b18-9e81-61349decaa75",
+		"name": "Nanosapp Backend",
+		"description": "Nanosapp Backend API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Campaigns",
+			"item": [
+				{
+					"name": "List Campaigns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/campaigns?status={{status}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campaigns"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "{{status}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Campaigns with status query",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/campaigns?status=Pending",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "Pending"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14a2-NhgYZBmxIQKzerO6e0G3ueK9SN8\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:29:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7442\",\n        \"name\": \"Campaign67db978c-a19d-4590-91f0-9d112b0916e1\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 89\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb74ed\",\n        \"name\": \"Campaignd82906b4-ea34-40a3-a650-9b530f2002bb\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 142\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb7643\",\n        \"name\": \"Campaignb94c6752-0468-4d00-adf1-0d128f66bff8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 170\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7b9b\",\n        \"name\": \"Campaign2fa93300-f500-4341-8a6b-53ec01bcfb3c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 59\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7c46\",\n        \"name\": \"Campaignf8760da0-6bbe-466e-bf7d-d3ba40b26b0c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 101\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb7f9d\",\n        \"name\": \"Campaign60d4f8e5-9b19-4836-a86d-83c4ed8dc7f8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 192\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb80f3\",\n        \"name\": \"Campaign289271de-99c6-4e73-a830-fb3c3347e97d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 116\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb819e\",\n        \"name\": \"Campaign9e46c691-ada3-4937-9678-363ef173eab1\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 65\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb8249\",\n        \"name\": \"Campaignc474cdaf-05bb-496e-b78c-6588ee9152a9\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 189\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb839f\",\n        \"name\": \"Campaigncd123104-6694-44c6-bfa3-ea292627d0b2\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 129\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb84f5\",\n        \"name\": \"Campaignc979b5c0-2b48-4624-a2ff-538e6f61b1c4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 148\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb85a0\",\n        \"name\": \"Campaign41a1900d-57fd-4860-8581-091245f4ddd9\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 168\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb864b\",\n        \"name\": \"Campaign107ac37c-215c-47ad-b09a-66c70249c445\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 150\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb86f6\",\n        \"name\": \"Campaignd3b94b99-457a-4b2a-bfda-ad515338cc4c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 123\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb89a2\",\n        \"name\": \"Campaign983722c5-66d5-4f88-a51a-1075e07f8217\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 99\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8ba3\",\n        \"name\": \"Campaign5f4d56a3-2b5a-41be-9345-cb522a066b2d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 83\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8c4e\",\n        \"name\": \"Campaign598a9857-6798-45c2-b095-7994834b9503\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 123\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb9050\",\n        \"name\": \"Campaigna36cfa38-89da-4a30-82fd-dae25e3e5c6d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 196\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb9653\",\n        \"name\": \"Campaign1d85242b-5cc4-4ecf-a8af-f48bdd8f492c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 135\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb97a9\",\n        \"name\": \"Campaign818a7b37-6072-4df7-8989-21316f942fec\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 66\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9854\",\n        \"name\": \"Campaigna26f0a21-a39f-4ebf-9117-cedb34599b5c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 61\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9b00\",\n        \"name\": \"Campaign5d387964-4021-4441-b2fa-7a35b4ebe92e\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 54\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9bab\",\n        \"name\": \"Campaign7cb10ef9-b229-41e9-b598-87807b8dc08c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 130\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eb9fad\",\n        \"name\": \"Campaignd9ebf844-a45d-4fe7-8ae3-c6d05ee966d8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 111\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba058\",\n        \"name\": \"Campaignee74b510-72ed-46a4-879c-5246462b3504\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 191\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba304\",\n        \"name\": \"Campaignf762ddd0-ad78-4bed-8bfc-8c2f7dcf29ae\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 177\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba3af\",\n        \"name\": \"Campaignef910110-cc41-4b3c-92e5-f179cd0723c7\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 146\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba5b0\",\n        \"name\": \"Campaign9bd6a44b-d46f-47d8-b465-b690b39b313c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 108\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba7b1\",\n        \"name\": \"Campaign8308f58b-2b51-4d02-abd8-3bdaec201365\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 172\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba907\",\n        \"name\": \"Campaign26330db6-d85a-442d-9f16-1579d2ca98b0\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 83\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70ebaa5d\",\n        \"name\": \"Campaigna572ba80-bacf-49c2-afa3-36ce76b8b106\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 152\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebab08\",\n        \"name\": \"Campaign61ca1d4c-9a0d-4f6a-907d-471e0723f873\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 134\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebabb3\",\n        \"name\": \"Campaign87ef22e5-3d07-411a-a90d-7f3b4dfff4a2\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 74\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebae5f\",\n        \"name\": \"Campaign8eb3dfac-2922-4af9-801c-9597cb7b72e4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 91\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb1b6\",\n        \"name\": \"Campaignb985cbc3-8a2c-4e28-930e-aeb80476a1b4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 114\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb50d\",\n        \"name\": \"Campaign8dfcd1bb-af96-478c-bda9-5fc43f60eed6\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 139\n    },\n    {\n        \"id\": \"5e68fb25f5b85adf70ebb663\",\n        \"name\": \"Campaigncb9ecdc2-d4c1-48e2-b623-361051d40538\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 113\n    }\n]"
+						},
+						{
+							"name": "List All Campaigns",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/campaigns",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3819-d2kwbuX7u63fqYL86CuQTx1dToU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:29:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7442\",\n        \"name\": \"Campaign67db978c-a19d-4590-91f0-9d112b0916e1\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 89\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb74ed\",\n        \"name\": \"Campaignd82906b4-ea34-40a3-a650-9b530f2002bb\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 142\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb7598\",\n        \"name\": \"Campaignc84ef254-496b-4871-895c-7fcb2eee09d6\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 181\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb7643\",\n        \"name\": \"Campaignb94c6752-0468-4d00-adf1-0d128f66bff8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 170\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb76ee\",\n        \"name\": \"Campaignb9980804-937b-4c4f-8e25-89c7f15055b5\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 163\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb7799\",\n        \"name\": \"Campaign9cab5d98-85b4-4f93-9ba2-f626dfbd3454\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 99\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb7844\",\n        \"name\": \"Campaign1c0ba831-4ff2-4a74-8a58-d516c55f17ac\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 60\n    },\n    {\n        \"id\": \"5e68fb1af5b85adf70eb78ef\",\n        \"name\": \"Campaign29589f99-29d8-4595-bb3a-93912dbfd581\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 68\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb799a\",\n        \"name\": \"Campaign5a397410-ff9d-453d-be59-bac9dcb41344\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 96\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7a45\",\n        \"name\": \"Campaign1de49453-d743-4ec0-8836-ada1a46c2c3a\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 188\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7af0\",\n        \"name\": \"Campaign2e0fa533-de0f-421d-8da4-cdae03afad91\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 184\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7b9b\",\n        \"name\": \"Campaign2fa93300-f500-4341-8a6b-53ec01bcfb3c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 59\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7c46\",\n        \"name\": \"Campaignf8760da0-6bbe-466e-bf7d-d3ba40b26b0c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 101\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7cf1\",\n        \"name\": \"Campaign3a7224f6-27af-4922-9b31-d4991302855c\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 105\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7d9c\",\n        \"name\": \"Campaign58ba26c8-399c-4450-ae8d-c3dbf1206b61\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 137\n    },\n    {\n        \"id\": \"5e68fb1bf5b85adf70eb7e47\",\n        \"name\": \"Campaign6894e564-4f57-4906-bf12-1a090c693ccd\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 172\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb7ef2\",\n        \"name\": \"Campaignde8e8b33-f180-4914-81f9-58974c04be19\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 94\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb7f9d\",\n        \"name\": \"Campaign60d4f8e5-9b19-4836-a86d-83c4ed8dc7f8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 192\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb8048\",\n        \"name\": \"Campaign9502e2d5-7ae6-47e1-b483-e2d2a29e6077\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 143\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb80f3\",\n        \"name\": \"Campaign289271de-99c6-4e73-a830-fb3c3347e97d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 116\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb819e\",\n        \"name\": \"Campaign9e46c691-ada3-4937-9678-363ef173eab1\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 65\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb8249\",\n        \"name\": \"Campaignc474cdaf-05bb-496e-b78c-6588ee9152a9\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 189\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb82f4\",\n        \"name\": \"Campaign81dd8762-3b9e-46f9-8272-bec7db4cb0f2\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 177\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb839f\",\n        \"name\": \"Campaigncd123104-6694-44c6-bfa3-ea292627d0b2\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 129\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb844a\",\n        \"name\": \"Campaign3d788c13-81d5-4da5-8fcf-9fd2d20ebeef\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 103\n    },\n    {\n        \"id\": \"5e68fb1cf5b85adf70eb84f5\",\n        \"name\": \"Campaignc979b5c0-2b48-4624-a2ff-538e6f61b1c4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 148\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb85a0\",\n        \"name\": \"Campaign41a1900d-57fd-4860-8581-091245f4ddd9\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 168\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb864b\",\n        \"name\": \"Campaign107ac37c-215c-47ad-b09a-66c70249c445\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 150\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb86f6\",\n        \"name\": \"Campaignd3b94b99-457a-4b2a-bfda-ad515338cc4c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 123\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb87a1\",\n        \"name\": \"Campaignb442099d-eb7d-488e-a931-a93ba1356a63\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 74\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb884c\",\n        \"name\": \"Campaigne94bfb7c-7259-47d2-8dfd-1dbf7a2a4ef2\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 123\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb88f7\",\n        \"name\": \"Campaign342065f0-53b9-4325-a30c-80e16674a19a\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 189\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb89a2\",\n        \"name\": \"Campaign983722c5-66d5-4f88-a51a-1075e07f8217\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 99\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb8a4d\",\n        \"name\": \"Campaigna66abcca-a80c-4f90-88b3-4cd7dcc903bc\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 186\n    },\n    {\n        \"id\": \"5e68fb1df5b85adf70eb8af8\",\n        \"name\": \"Campaign1ca26d82-1ea5-4742-b777-864b37b63b55\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 177\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8ba3\",\n        \"name\": \"Campaign5f4d56a3-2b5a-41be-9345-cb522a066b2d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 83\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8c4e\",\n        \"name\": \"Campaign598a9857-6798-45c2-b095-7994834b9503\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 123\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8cf9\",\n        \"name\": \"Campaign40a5f455-b9df-4e75-af26-f60e18f077de\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 100\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8da4\",\n        \"name\": \"Campaigndfea12a6-64a6-4487-b12a-4aca63146761\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 189\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8e4f\",\n        \"name\": \"Campaign81acc82b-e634-460b-87d1-9abc2655b235\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 183\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8efa\",\n        \"name\": \"Campaignd2506ce3-8135-4f11-b091-1fc7a48ccd0a\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 168\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb8fa5\",\n        \"name\": \"Campaign42a46192-e964-4ae9-93f3-1978fa1f9836\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 57\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb9050\",\n        \"name\": \"Campaigna36cfa38-89da-4a30-82fd-dae25e3e5c6d\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 196\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb90fb\",\n        \"name\": \"Campaignc710e327-a5d9-4a1f-b8bb-e4fcf0dca3d5\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 128\n    },\n    {\n        \"id\": \"5e68fb1ef5b85adf70eb91a6\",\n        \"name\": \"Campaign7ed724aa-298a-4e16-b6fe-dd45b61e1206\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 80\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb9251\",\n        \"name\": \"Campaign3a772cf5-422a-4d3b-b8d4-0fd7bd47a5f0\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 165\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb92fc\",\n        \"name\": \"Campaign3f82f835-9b53-4fe2-b4c4-e89d3fb080fa\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 148\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb93a7\",\n        \"name\": \"Campaign1fb03c2a-7c1c-499f-9fa0-e986b099d1d6\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 148\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb9452\",\n        \"name\": \"Campaign758bd21f-41ef-4f20-8dd9-7b5292fc7763\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 61\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb94fd\",\n        \"name\": \"Campaign3790b380-1a00-43e9-a557-a0672d1a24ef\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 190\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb95a8\",\n        \"name\": \"Campaignbda9cd95-6b79-4d55-9792-88d8097fa244\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 190\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb9653\",\n        \"name\": \"Campaign1d85242b-5cc4-4ecf-a8af-f48bdd8f492c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 135\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb96fe\",\n        \"name\": \"Campaign9597e13f-a0aa-469b-a856-918ad8017f3e\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 52\n    },\n    {\n        \"id\": \"5e68fb1ff5b85adf70eb97a9\",\n        \"name\": \"Campaign818a7b37-6072-4df7-8989-21316f942fec\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 66\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9854\",\n        \"name\": \"Campaigna26f0a21-a39f-4ebf-9117-cedb34599b5c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 61\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb98ff\",\n        \"name\": \"Campaigncf43a474-1ae1-4fca-9d90-7e4277ff28b4\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 75\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb99aa\",\n        \"name\": \"Campaignf15b1575-3ab0-4f62-8982-31260bf3e36b\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 72\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9a55\",\n        \"name\": \"Campaign3bc58249-08ce-4bb2-9b4d-4165b1b6f68a\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 51\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9b00\",\n        \"name\": \"Campaign5d387964-4021-4441-b2fa-7a35b4ebe92e\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 54\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9bab\",\n        \"name\": \"Campaign7cb10ef9-b229-41e9-b598-87807b8dc08c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 130\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9c56\",\n        \"name\": \"Campaignd5cbb257-01ac-4601-bed8-838bc914d6ed\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 89\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9d01\",\n        \"name\": \"Campaign2c8f2002-be91-435c-8b01-6f87fb49a171\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 134\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9dac\",\n        \"name\": \"Campaign6c9292ac-02dd-4437-ad04-7554b911e481\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 189\n    },\n    {\n        \"id\": \"5e68fb20f5b85adf70eb9e57\",\n        \"name\": \"Campaign34a74e2d-6985-40df-89f0-d889fae6a75b\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 170\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eb9f02\",\n        \"name\": \"Campaign6ac49183-6d04-4fb6-9dd9-b04d0aeadf80\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 72\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eb9fad\",\n        \"name\": \"Campaignd9ebf844-a45d-4fe7-8ae3-c6d05ee966d8\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 111\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba058\",\n        \"name\": \"Campaignee74b510-72ed-46a4-879c-5246462b3504\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 191\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba103\",\n        \"name\": \"Campaignbfcdaea6-2314-495c-bb55-3a87b6d7c5bd\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 93\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba1ae\",\n        \"name\": \"Campaign33d79e8d-4665-44eb-b2e1-25a11ba7b4d4\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 89\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba259\",\n        \"name\": \"Campaign0a54887d-c312-4bf5-8121-cd217140981b\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 86\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba304\",\n        \"name\": \"Campaignf762ddd0-ad78-4bed-8bfc-8c2f7dcf29ae\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 177\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba3af\",\n        \"name\": \"Campaignef910110-cc41-4b3c-92e5-f179cd0723c7\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 146\n    },\n    {\n        \"id\": \"5e68fb21f5b85adf70eba45a\",\n        \"name\": \"Campaigne7cb599b-a024-4853-9eff-b49761503a67\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 78\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba505\",\n        \"name\": \"Campaignb5388f7b-03bc-449f-9933-b78d0f15db9c\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 74\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba5b0\",\n        \"name\": \"Campaign9bd6a44b-d46f-47d8-b465-b690b39b313c\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 108\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba65b\",\n        \"name\": \"Campaigncd28939a-0fa8-4b9d-950d-9237c25b6fba\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 153\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba706\",\n        \"name\": \"Campaign9c5697a5-bb7b-4dd6-8094-8dad8652340c\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 160\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba7b1\",\n        \"name\": \"Campaign8308f58b-2b51-4d02-abd8-3bdaec201365\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 172\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba85c\",\n        \"name\": \"Campaign9b6316e8-ec0b-40b8-a784-bc9231762026\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 90\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba907\",\n        \"name\": \"Campaign26330db6-d85a-442d-9f16-1579d2ca98b0\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 83\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70eba9b2\",\n        \"name\": \"Campaignb63aaa9b-c156-4ced-93e4-0a0edd514733\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 150\n    },\n    {\n        \"id\": \"5e68fb22f5b85adf70ebaa5d\",\n        \"name\": \"Campaigna572ba80-bacf-49c2-afa3-36ce76b8b106\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 152\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebab08\",\n        \"name\": \"Campaign61ca1d4c-9a0d-4f6a-907d-471e0723f873\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 134\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebabb3\",\n        \"name\": \"Campaign87ef22e5-3d07-411a-a90d-7f3b4dfff4a2\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 74\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebac5e\",\n        \"name\": \"Campaigndd8730db-911b-4fa6-8b0d-0f347c1df435\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 185\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebad09\",\n        \"name\": \"Campaign6ec52399-ff80-452f-97ce-8aa8e82df59b\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 98\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebadb4\",\n        \"name\": \"Campaign648561ae-ee2c-414e-a68a-d096991b97b7\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 151\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebae5f\",\n        \"name\": \"Campaign8eb3dfac-2922-4af9-801c-9597cb7b72e4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 91\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebaf0a\",\n        \"name\": \"Campaigndf54fe71-c74e-4a01-91b9-7436f29ddafb\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 158\n    },\n    {\n        \"id\": \"5e68fb23f5b85adf70ebafb5\",\n        \"name\": \"Campaigneeab46b5-9066-412d-b538-d83c80bed106\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 79\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb060\",\n        \"name\": \"Campaign700eb1c4-6472-4cb3-b1ee-7f3e875895bf\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 118\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb10b\",\n        \"name\": \"Campaign80927ad2-0407-410f-ad25-3ce54b5e80da\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 70\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb1b6\",\n        \"name\": \"Campaignb985cbc3-8a2c-4e28-930e-aeb80476a1b4\",\n        \"status\": \"Pending\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 114\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb261\",\n        \"name\": \"Campaignb442d599-abb3-46ca-9994-39a370e51eb3\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 105\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb30c\",\n        \"name\": \"Campaignb3997eda-6620-465a-99b1-192ee2f9040a\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 76\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb3b7\",\n        \"name\": \"Campaigne16806be-7284-4d89-870b-732fb6bbaede\",\n        \"status\": \"Delivering\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 140\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb462\",\n        \"name\": \"Campaignbb1b0a45-89a0-40bb-801f-301824279162\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Sales\",\n        \"total_budget\": 167\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb50d\",\n        \"name\": \"Campaign8dfcd1bb-af96-478c-bda9-5fc43f60eed6\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 139\n    },\n    {\n        \"id\": \"5e68fb24f5b85adf70ebb5b8\",\n        \"name\": \"Campaignc9d13800-16ec-4228-afdc-af2604155e09\",\n        \"status\": \"Rejected\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 135\n    },\n    {\n        \"id\": \"5e68fb25f5b85adf70ebb663\",\n        \"name\": \"Campaigncb9ecdc2-d4c1-48e2-b623-361051d40538\",\n        \"status\": \"Pending\",\n        \"goal\": \"Branding\",\n        \"total_budget\": 113\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Campaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/campaigns/{{campaignId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campaigns",
+								"{{campaignId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Campaign",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/campaigns/5e68fb19f5b85adf70eb7442",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns",
+										"5e68fb19f5b85adf70eb7442"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-GKJm5ChlbHACct1Q3BZRLyCfEcc\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:43:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb7442\",\n    \"name\": \"Campaign67db978c-a19d-4590-91f0-9d112b0916e1\",\n    \"status\": \"Pending\",\n    \"goal\": \"Sales\",\n    \"total_budget\": 89\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Campaign",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": {{campaignName}},\n    \"status\": {{campaignStatus}},\n    \"goal\": {{campaignGoal}},\n    \"total_budget\": {{campaignTotalBudget}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/campaigns/{{campaignId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campaigns",
+								"{{campaignId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Campaign",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Updated Campaign\",\n    \"status\": \"Delivering\",\n    \"goal\": \"Advertisement\",\n    \"total_budget\": 30\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/campaigns/5e68fb19f5b85adf70eb7442",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns",
+										"5e68fb19f5b85adf70eb7442"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-t2IVWh+08DpY0Z+CKyzr8AOVhcg\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:45:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb7442\",\n    \"name\": \"Updated Campaign\",\n    \"status\": \"Delivering\",\n    \"goal\": \"Advertisement\",\n    \"total_budget\": 30\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Adgroups",
+			"item": [
+				{
+					"name": "List Ad groups",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/campaigns/{{campaignId}}/adgroups",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campaigns",
+								"{{campaignId}}",
+								"adgroups"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Ad groups",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/campaigns/5e68fb19f5b85adf70eb7442/adgroups",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns",
+										"5e68fb19f5b85adf70eb7442",
+										"adgroups"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "949"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b5-NHZnLINb4E61IiDa8+I9OjyEI7s\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:52:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73b9\",\n        \"name\": \"Ad group55e6eff5-173b-40ff-bdf7-5a38d9104d1e\",\n        \"age_range\": [\n            20,\n            39\n        ],\n        \"locations\": [\n            \"Zurich\"\n        ],\n        \"keywords\": [\n            \"Best football boots\"\n        ],\n        \"genders\": [\n            \"Male\",\n            \"Female\"\n        ]\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73db\",\n        \"name\": \"Ad group6dcc2922-4ad2-47f8-888f-0d613662522a\",\n        \"age_range\": [\n            20,\n            41\n        ],\n        \"locations\": [\n            \"Zurich\"\n        ],\n        \"keywords\": [\n            \"Best football boots\"\n        ],\n        \"genders\": [\n            \"Male\",\n            \"Female\"\n        ]\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73fd\",\n        \"name\": \"Ad groupc7c23167-2070-492e-ac98-b723f85f4c4e\",\n        \"age_range\": [\n            20,\n            22\n        ],\n        \"locations\": [\n            \"Basel\"\n        ],\n        \"keywords\": [\n            \"Best shoes\"\n        ],\n        \"genders\": [\n            \"Male\",\n            \"Female\"\n        ]\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb741f\",\n        \"name\": \"Ad groupe9737ba9-852e-4008-9f21-d1e7312c47a7\",\n        \"age_range\": [\n            20,\n            35\n        ],\n        \"locations\": [\n            \"Bern\"\n        ],\n        \"keywords\": [\n            \"Best football boots\"\n        ],\n        \"genders\": [\n            \"Male\",\n            \"Female\"\n        ]\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7441\",\n        \"name\": \"Ad groupd47c965e-d41c-470a-89f5-f106e1e70328\",\n        \"age_range\": [\n            20,\n            47\n        ],\n        \"locations\": [\n            \"Basel\"\n        ],\n        \"keywords\": [\n            \"Best shoes\"\n        ],\n        \"genders\": [\n            \"Male\",\n            \"Female\"\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Ad group",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/adgroups/{{adgroupId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"adgroups",
+								"{{adgroupId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Ad group",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/adgroups/5e68fb19f5b85adf70eb73b9",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"adgroups",
+										"5e68fb19f5b85adf70eb73b9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-GEsWIRKYUdz18DQ70ASD/s7q8v0\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:54:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73b9\",\n    \"name\": \"Ad group55e6eff5-173b-40ff-bdf7-5a38d9104d1e\",\n    \"age_range\": [\n        20,\n        39\n    ],\n    \"locations\": [\n        \"Zurich\"\n    ],\n    \"keywords\": [\n        \"Best football boots\"\n    ],\n    \"genders\": [\n        \"Male\",\n        \"Female\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Ad group",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": {{adgroupName}},\n    \"age_range\": [\n        {{ageRange1}},\n        {{ageRange2}}\n    ],\n    \"locations\": [\n        {{locations}}\n    ],\n    \"keywords\": [\n        {{keywords}}\n    ],\n    \"genders\": [\n        {{genders}}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/adgroups/{{adgroupId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"adgroups",
+								"{{adgroupId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Ad group",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Updated Adgroup Name\",\n    \"age_range\": [\n        25,\n        60\n    ],\n    \"locations\": [\n        \"London\"\n    ],\n    \"keywords\": [\n        \"Best shoes\"\n    ],\n    \"genders\": [\n        \"Male\",\n        \"Female\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/adgroups/5e68fb19f5b85adf70eb73b9",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"adgroups",
+										"5e68fb19f5b85adf70eb73b9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "160"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a0-0yNcaQ6AfrvVl+iiOTvOPtgQeu8\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:55:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73b9\",\n    \"name\": \"Updated Adgroup Name\",\n    \"age_range\": [\n        25,\n        60\n    ],\n    \"locations\": [\n        \"London\"\n    ],\n    \"keywords\": [\n        \"Best shoes\"\n    ],\n    \"genders\": [\n        \"Male\",\n        \"Female\"\n    ]\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ads",
+			"item": [
+				{
+					"name": "List Ads of Campaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/campaigns/{{campaignId}}/ads",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campaigns",
+								"{{campaignId}}",
+								"ads"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/campaigns/5e68fb19f5b85adf70eb7442/ads",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"campaigns",
+										"5e68fb19f5b85adf70eb7442",
+										"ads"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8c-2rEbjBetwem3Yd7ul4oguWZt87s\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:56:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a2\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header b59be1a0-2551-4716-9213-5e16771401f9\",\n        \"description\": \"Description 3d00b7c2-46f2-4f7b-867d-842106bb25c9\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73ad\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 1cf1c9f5-c119-4e9e-9eac-5a29b8b70299\",\n        \"description\": \"Description a7268158-619b-4849-a5d9-9cf77ed850f3\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73b8\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 5ba29551-4d2d-48b6-8a33-ef4c4edd88a6\",\n        \"description\": \"Description 4de0301f-9ed1-4f17-b5cd-2fffe7d0ba78\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73c4\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header ecd32ced-a83d-41bd-ba86-d1d47972d68b\",\n        \"description\": \"Description 7be19818-b215-4f33-9334-ec0dbf9ee291\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73cf\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header a33cd4d5-a574-4ddd-ab1e-8e1a8123fca7\",\n        \"description\": \"Description e96ebee7-d60f-48cf-80fb-995f78f80a9a\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73da\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 7ca6fd89-c233-421d-a854-d199b0cfd0d4\",\n        \"description\": \"Description 849bd089-a3e0-474e-83fc-97b9eb409f09\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73e6\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 05b1ae57-2dd0-4a22-ab68-d040c6aa6061\",\n        \"description\": \"Description 06384be4-d44d-42ac-a859-b20ebfd9e7ba\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73f1\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header c7ffcfaa-fa88-4cf0-a22a-ff4984c2486a\",\n        \"description\": \"Description fa0736da-9fcd-4bad-9d4a-cac3fe329d92\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73fc\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 8a2494bb-bb8c-43d8-b823-286f3540531c\",\n        \"description\": \"Description c5762e5f-47d7-4141-aa65-8a411faf37c7\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7408\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header f91fd707-6dd0-4c4b-ba2a-dbec0c279e6c\",\n        \"description\": \"Description 6617bdf2-08ce-4466-a216-819afaed6507\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7413\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header b770fa0e-4610-416b-9a3c-604e01e68aa7\",\n        \"description\": \"Description 6f203e04-78c5-49a6-a392-c32345b381e4\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb741e\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 27bac886-3668-489d-b0d8-9cc125d047eb\",\n        \"description\": \"Description 1142f091-b43b-428b-b878-742e3b6449a3\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb742a\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 1df0a1b5-2efd-4801-8ad3-f4f95a375041\",\n        \"description\": \"Description e0a83ba6-0a07-487c-b07a-b6adef74fa52\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7435\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header 3010c64d-72ed-4b2e-9a2d-ce30cfbf0aa3\",\n        \"description\": \"Description efb78f53-e4a4-4d3d-91ce-df67e3ae5708\"\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb7440\",\n        \"url\": \"nanos.ai\",\n        \"image\": \"dummy_image.jpg\",\n        \"header\": \"Header f40a3497-fdd6-4b1c-84cb-032bb86a1039\",\n        \"description\": \"Description a498ecc0-d1f5-4273-bf25-321005befa37\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Ad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ads/{{adId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ads",
+								"{{adId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Ad",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/ads/5e68fb19f5b85adf70eb73a2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ads",
+										"5e68fb19f5b85adf70eb73a2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c4-bpsDEVJRlsCH4yR79c/JqFiZXoI\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:57:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73a2\",\n    \"url\": \"nanos.ai\",\n    \"image\": \"dummy_image.jpg\",\n    \"header\": \"Header b59be1a0-2551-4716-9213-5e16771401f9\",\n    \"description\": \"Description 3d00b7c2-46f2-4f7b-867d-842106bb25c9\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Ad",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\": {{adUrl}},\r\n    \"image\": {{adImage}},\r\n    \"header\": {{adHeader}},\r\n    \"description\": {{adDescription}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ads/{{adId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ads",
+								"{{adId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Ad",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"url\": \"update.com\",\r\n    \"image\": \"update_image.jpg\",\r\n    \"header\": \"Update Header\",\r\n    \"description\": \"Update Description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/ads/5e68fb19f5b85adf70eb73a2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ads",
+										"5e68fb19f5b85adf70eb73a2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-y/i5O2IL3xNw+rgRfB/z1Sv2VOo\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:58:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73a2\",\n    \"url\": \"update.com\",\n    \"image\": \"update_image.jpg\",\n    \"header\": \"Update Header\",\n    \"description\": \"Update Description\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Statistics",
+			"item": [
+				{
+					"name": "List Statistics of Ad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ads/{{adId}}/stats?start={{startDate}}&end={{endDate}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ads",
+								"{{adId}}",
+								"stats"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "{{startDate}}"
+								},
+								{
+									"key": "end",
+									"value": "{{endDate}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Statistics of Ad",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/ads/5e68fb19f5b85adf70eb73ad/stats",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ads",
+										"5e68fb19f5b85adf70eb73ad",
+										"stats"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51a-hSNfI9GuvGiWHyB04T/eTYC2gBw\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:59:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a3\",\n        \"clicks\": 92,\n        \"cost\": 47,\n        \"impressions\": 8209,\n        \"date\": \"2020-01-12T05:11:06.000Z\",\n        \"cost_per_click\": 0.51\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a4\",\n        \"clicks\": 23,\n        \"cost\": 84,\n        \"impressions\": 6358,\n        \"date\": \"2020-01-13T05:11:06.000Z\",\n        \"cost_per_click\": 3.65\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a5\",\n        \"clicks\": 48,\n        \"cost\": 82,\n        \"impressions\": 8306,\n        \"date\": \"2020-01-14T05:11:06.000Z\",\n        \"cost_per_click\": 1.71\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a6\",\n        \"clicks\": 11,\n        \"cost\": 5,\n        \"impressions\": 8630,\n        \"date\": \"2020-01-15T05:11:06.000Z\",\n        \"cost_per_click\": 0.45\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a7\",\n        \"clicks\": 70,\n        \"cost\": 34,\n        \"impressions\": 8400,\n        \"date\": \"2020-01-16T05:11:06.000Z\",\n        \"cost_per_click\": 0.49\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a8\",\n        \"clicks\": 46,\n        \"cost\": 92,\n        \"impressions\": 7520,\n        \"date\": \"2020-01-17T05:11:06.000Z\",\n        \"cost_per_click\": 2\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a9\",\n        \"clicks\": 66,\n        \"cost\": 30,\n        \"impressions\": 5734,\n        \"date\": \"2020-01-18T05:11:06.000Z\",\n        \"cost_per_click\": 0.45\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73aa\",\n        \"clicks\": 73,\n        \"cost\": 46,\n        \"impressions\": 7501,\n        \"date\": \"2020-01-19T05:11:06.000Z\",\n        \"cost_per_click\": 0.63\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73ab\",\n        \"clicks\": 73,\n        \"cost\": 79,\n        \"impressions\": 7576,\n        \"date\": \"2020-01-20T05:11:06.000Z\",\n        \"cost_per_click\": 1.08\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73ac\",\n        \"clicks\": 28,\n        \"cost\": 1,\n        \"impressions\": 2832,\n        \"date\": \"2020-01-21T05:11:06.000Z\",\n        \"cost_per_click\": 0.04\n    }\n]"
+						},
+						{
+							"name": "List Statistics of Ad between dates",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/ads/5e68fb19f5b85adf70eb73ad/stats?start=2020-01-13&end=2020-01-16",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"ads",
+										"5e68fb19f5b85adf70eb73ad",
+										"stats"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "2020-01-13"
+										},
+										{
+											"key": "end",
+											"value": "2020-01-16"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "524"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20c-lq1Ug2q/kiBzGp+dSq6VDRwOHPg\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 04:59:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a4\",\n        \"clicks\": 23,\n        \"cost\": 84,\n        \"impressions\": 6358,\n        \"date\": \"2020-01-13T05:11:06.000Z\",\n        \"cost_per_click\": 3.65\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a5\",\n        \"clicks\": 48,\n        \"cost\": 82,\n        \"impressions\": 8306,\n        \"date\": \"2020-01-14T05:11:06.000Z\",\n        \"cost_per_click\": 1.71\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a6\",\n        \"clicks\": 11,\n        \"cost\": 5,\n        \"impressions\": 8630,\n        \"date\": \"2020-01-15T05:11:06.000Z\",\n        \"cost_per_click\": 0.45\n    },\n    {\n        \"id\": \"5e68fb19f5b85adf70eb73a7\",\n        \"clicks\": 70,\n        \"cost\": 34,\n        \"impressions\": 8400,\n        \"date\": \"2020-01-16T05:11:06.000Z\",\n        \"cost_per_click\": 0.49\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Statistic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/stats/{{statId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"stats",
+								"{{statId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Statistic",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/stats/5e68fb19f5b85adf70eb73a4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"stats",
+										"5e68fb19f5b85adf70eb73a4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-vlKcPs3lVYqgaVfq79cvfqPMM4k\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 05:00:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73a4\",\n    \"clicks\": 23,\n    \"cost\": 84,\n    \"impressions\": 6358,\n    \"date\": \"2020-01-13T05:11:06.000Z\",\n    \"cost_per_click\": 3.65\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Statistics",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clicks\": {{statClicks}},\r\n    \"cost\": {{statCost}},\r\n    \"impressions\": {{statImpressions}},\r\n    \"date\": {{statDate}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/stats/{{statId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"stats",
+								"{{statId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Statistics",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clicks\": 34,\r\n    \"cost\": 45,\r\n    \"impressions\": 3445,\r\n    \"date\": \"2020-01-13T05:11:06.000Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/stats/5e68fb19f5b85adf70eb73a4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"stats",
+										"5e68fb19f5b85adf70eb73a4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-mgEGk8QZX/Oj3T9XpBlNPuSiQlA\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Mar 2020 05:01:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5e68fb19f5b85adf70eb73a4\",\n    \"clicks\": 34,\n    \"cost\": 45,\n    \"impressions\": 3445,\n    \"date\": \"2020-01-13T05:11:06.000Z\",\n    \"cost_per_click\": 1.32\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

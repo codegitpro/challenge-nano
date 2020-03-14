@@ -1,0 +1,6 @@
+version: "2"
+services:
+  nanosapp-api:
+    command: yarn dev
+    environment:
+      - NODE_ENV=development
