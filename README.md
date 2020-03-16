@@ -4,7 +4,6 @@ Test Project for Nanosapp for building RESTful APIs using Node.js, Express and M
 
 ## Features
 
-
  - ES2017 latest features like Async/Await
  - Following Airbnb best practices
  - CORS enabled
